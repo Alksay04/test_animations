@@ -1,0 +1,93 @@
+body {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.demoContainer {
+    box-sizing: border-box;
+    width: 95vw;
+    height: 40vw;
+    border: 2px black solid;
+    margin-inline: auto;
+    padding: 5px;
+    position: relative;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    margin-bottom: 5px;
+}
+
+.easeOutSquare {
+    position: absolute;
+    top: 5;
+    left: 5;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 5s;
+    transition-timing-function: ease-out;
+}
+
+.easeInSquare {
+    position: absolute;
+    top: 60;
+    left: 5;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 5s;
+    transition-timing-function: ease-in;
+}
+
+.linearSquare {
+    position: absolute;
+    top: 115;
+    left: 5;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+}
+
+.easeOutSquare:hover {
+    left: 95%;
+}
+
+.easeInSquare:hover {
+    left: 95%;
+}
+
+.linearSquare:hover {
+    left: 95%;
+}
+
+
+.active {
+    left: 95%;
+}
+
+.cancelOrderButton {
+    padding: 10px;
+    color: white;
+    background-color: blueviolet;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 0;
+    transition-property: all;
+    transition-delay: 0s;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+.buyButton {
+    position: absolute;
+    font-size: 240px;
+    color: white;
+    background-color: blue;
+    width: 100vw;
+    height: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
